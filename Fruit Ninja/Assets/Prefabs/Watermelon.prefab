@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1412204972562350281, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a95fecfb39faf1a4c9f8b6a398b8785c, type: 2}
+    - target: {fileID: 3452300489275240003, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a95fecfb39faf1a4c9f8b6a398b8785c, type: 2}
     - target: {fileID: 3709522305364532700, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -37,12 +45,20 @@ PrefabInstance:
       value: Watermelon
       objectReference: {fileID: 0}
     - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.1022866
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.3808107
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.1489463
       objectReference: {fileID: 0}
     - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.061841935
+      value: 0.061842
       objectReference: {fileID: 0}
     - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_LocalPosition.z

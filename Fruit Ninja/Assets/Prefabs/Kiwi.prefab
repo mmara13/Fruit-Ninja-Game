@@ -8,10 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 275287114642455462, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5639
+      objectReference: {fileID: 0}
     - target: {fileID: 619760072329863452, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1412204972562350281, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1ac9e8cdccc91b4294722d5821821c3, type: 2}
+    - target: {fileID: 3452300489275240003, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1ac9e8cdccc91b4294722d5821821c3, type: 2}
     - target: {fileID: 3709522305364532700, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -28,6 +40,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 7b5431ccf0763464f99e5a5e61f1e3f7, type: 2}
+    - target: {fileID: 5144056390684760929, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5639
+      objectReference: {fileID: 0}
     - target: {fileID: 5487790786079064539, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -37,16 +53,24 @@ PrefabInstance:
       value: Kiwi
       objectReference: {fileID: 0}
     - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.1489463
       objectReference: {fileID: 0}
     - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.061841935
+      value: 0.061842
       objectReference: {fileID: 0}
     - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.894344
+      value: -3.8943
       objectReference: {fileID: 0}
     - target: {fileID: 8393161208903188090, guid: 3de28ec30eeafb440a884f8f4f8e0d2e, type: 3}
       propertyPath: m_LocalRotation.w
