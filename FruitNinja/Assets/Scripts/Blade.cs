@@ -73,5 +73,10 @@ public class Blade : MonoBehaviour
 
         transform.position = newPosition;
     }
+     public void SetTrailColor(Color color)
+    {
+        sliceTrail.startColor = color;
+        sliceTrail.endColor = color;
+    }
 
 }

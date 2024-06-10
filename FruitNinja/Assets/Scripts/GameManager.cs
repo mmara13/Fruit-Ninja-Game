@@ -51,6 +51,36 @@ public class GameManager : MonoBehaviour
     public void IncreaseScore(int amount){
         score += amount;
         scoreText.text = score.ToString();
+        UpdateBladeColor();
+
+    }
+
+    private void UpdateBladeColor()
+    {
+        Color newColor;
+
+        if (score < 10)
+        {
+            newColor = Color.white;
+        }
+        else if (score < 20)
+        {
+            newColor = Color.yellow;
+        }
+        else if (score < 30)
+        {
+            newColor = Color.green;
+        }
+        else if (score < 50)
+        {
+            newColor = Color.red;
+        }
+        else 
+        {
+            newColor = Color.magenta;
+        }
+
+        blade.SetTrailColor(newColor);
     }
     public void Explode(){
         blade.enabled = false;

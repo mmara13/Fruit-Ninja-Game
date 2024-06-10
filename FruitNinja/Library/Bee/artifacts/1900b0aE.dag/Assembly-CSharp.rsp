@@ -358,6 +358,7 @@
 "Assets/Scripts/Fruits.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Spawner.cs"
+"Assets/Scripts/White.cs"
 -langversion:9.0
 /deterministic
 /optimize+
