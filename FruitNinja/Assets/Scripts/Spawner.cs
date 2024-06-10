@@ -8,9 +8,14 @@ public class Spawner : MonoBehaviour
     public GameObject[] fruitPrefabs;
 
     public GameObject bombPrefab;
+
+    public GameObject specialFruitPrefab;
     
     [Range(0f, 1f)]
     public float bombChance = 0.05f;
+
+    [Range(0f, 1f)]
+    public float specialFruitChance = 0.05f;
 
     public float minSpawnDelay = 0.25f; //1/4 sec
     public float maxSpawnDelay; //1s for spawining
@@ -54,6 +59,10 @@ public class Spawner : MonoBehaviour
 
             if(Random.value < bombChance){
                 prefab = bombPrefab;
+            }
+
+             if(Random.value < specialFruitChance){
+                prefab = specialFruitPrefab;
             }
 
             Vector3 position = new Vector3();
