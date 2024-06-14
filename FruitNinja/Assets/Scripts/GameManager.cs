@@ -10,11 +10,14 @@ public class GameManager : MonoBehaviour
     private Spawner spawner;
     private Blade blade;
 
+    AudioManager audioManager;
+
     private int score;
 
     private void Awake(){
         blade = FindObjectOfType<Blade>();
         spawner = FindObjectOfType<Spawner>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Start(){
@@ -87,6 +90,7 @@ public class GameManager : MonoBehaviour
         spawner.enabled = false;
 
         StartCoroutine(ExplodeSequence());
+        audioManager.PlaySFX(audioManager.bomb);
     }
     private IEnumerator ExplodeSequence(){
         float elapsed = 0f;

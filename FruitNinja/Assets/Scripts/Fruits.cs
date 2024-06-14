@@ -11,12 +11,15 @@ public class Fruit : MonoBehaviour
 
     public int points = 1;
 
+    AudioManager audioManager;
+
 
     private void Awake()
     {
         fruitRigidbody = GetComponent<Rigidbody>();
         fruitCollider = GetComponent<Collider>();
         juicyTime = GetComponentInChildren<ParticleSystem>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Slice(Vector3 direction, Vector3 position, float force)
@@ -24,7 +27,11 @@ public class Fruit : MonoBehaviour
         FindObjectOfType<GameManager>().IncreaseScore(points);
 
         whole.SetActive(false);
+
+        audioManager.PlaySFX(audioManager.slice);
+
         sliced.SetActive(true);
+
         
         fruitCollider.enabled = false;
         juicyTime.Play();
