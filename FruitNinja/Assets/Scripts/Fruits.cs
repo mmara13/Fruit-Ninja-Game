@@ -16,43 +16,44 @@ public class Fruit : MonoBehaviour
 
     private void Awake()
     {
-        fruitRigidbody = GetComponent<Rigidbody>();
-        fruitCollider = GetComponent<Collider>();
-        juicyTime = GetComponentInChildren<ParticleSystem>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        fruitRigidbody = GetComponent<Rigidbody>(); // Get the rigidbody component
+        fruitCollider = GetComponent<Collider>(); // Get the collider component
+        juicyTime = GetComponentInChildren<ParticleSystem>(); // Get the juice particles
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>(); // Find the audio manager
     }
 
-    private void Slice(Vector3 direction, Vector3 position, float force)
+    private void Slice(Vector3 direction, Vector3 position, float force)    // Slice the fruit
     {
-        FindObjectOfType<GameManager>().IncreaseScore(points);
+        FindObjectOfType<GameManager>().IncreaseScore(points); // Increase the score
 
-        whole.SetActive(false);
+        whole.SetActive(false); // Disable the whole fruit
 
-        audioManager.PlaySFX(audioManager.slice);
+        audioManager.PlaySFX(audioManager.slice); // Play the slice sound
 
-        sliced.SetActive(true);
+        sliced.SetActive(true); // Enable the sliced fruit
 
         
-        fruitCollider.enabled = false;
-        juicyTime.Play();
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        sliced.transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        fruitCollider.enabled = false; // Disable the collider
+        juicyTime.Play(); // Play the juice particles
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; // Calculate the angle of the slice
+        sliced.transform.rotation = Quaternion.Euler(0f, 0f, angle); // Rotate the sliced fruit
 
-        Rigidbody[] slices = sliced.GetComponentsInChildren<Rigidbody>();
+        Rigidbody[] slices = sliced.GetComponentsInChildren<Rigidbody>(); // Get the rigidbodies of the slices
 
         foreach (Rigidbody slice in slices)
         {
-            slice.velocity = fruitRigidbody.velocity;
-            slice.AddForceAtPosition(direction * force, position, ForceMode.Impulse);
+            slice.velocity = fruitRigidbody.velocity; // Set the velocity of the slice
+            slice.AddForceAtPosition(direction * force, position, ForceMode.Impulse); // Add a force to the slice
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")) // If the fruit collides with the player
+        
         {
-            Blade blade = other.GetComponent<Blade>();
-            Slice(blade.Direction, blade.transform.position, blade.sliceForce);
+            Blade blade = other.GetComponent<Blade>(); // Get the blade component
+            Slice(blade.Direction, blade.transform.position, blade.sliceForce); // Slice the fruit
         }
     }
 
