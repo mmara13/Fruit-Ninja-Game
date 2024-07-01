@@ -25,6 +25,8 @@ To defeat **Restanta** and his minions, you must restore the elemental power to 
 
 ![Untitled Diagram drawio](https://github.com/CosminBalaita2003/FruitNinja/assets/126869724/6ba9080d-2f03-4817-8bb8-bf2a17b30619)
 
+## Design Patter - Singleton Pattern
+https://github.com/CosminBalaita2003/FruitNinja/blob/main/FruitNinja/Assets/Scripts/Blade.cs
 
 ## link demo: 
 https://youtu.be/RDGW4JLRuy4?si=nqBNekavQ8R3NjUk
