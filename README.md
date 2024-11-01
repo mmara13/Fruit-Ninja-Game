@@ -1,4 +1,9 @@
 # Fruit Ninja Game :watermelon: :apple: :lemon:
+# Team:
+Balaita Cosmin
+Iscru Bianca
+Pericica Medeea
+Spataru Mara
 ## Epic Story
 > In the mystical land of FMI, where fruits grow to extraordinary sizes and possess magical properties, a fierce and ancient order of warriors known as the FMI's Fruit Ninjas protect the realm. These warriors harness the power of elemental blades, each reflecting the essence of their skill and the spirit of the fruits they protect.
 
